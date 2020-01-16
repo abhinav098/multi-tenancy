@@ -8,8 +8,6 @@ Bundler.require(*Rails.groups)
 
 module MultiTenancy
   class Application < Rails::Application
-
-    config.middleware.use Apartment::Elevators::Subdomain
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
